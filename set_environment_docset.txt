@@ -1,0 +1,20 @@
+Requirements
+*Qt 5.0
+*X C Binding – keysyms (Ubuntu libxcb-keysyms1-dev)
+*bsdtar is required for the built-in docset 	extracting to work
+*libappindicator and libappindicator-devel for 	notifications
+
+installation:
+
+$ sudo add-apt-repository ppa:zeal-developers/ppa
+$ sudo apt-get update
+$ sudo apt-get install zeal
+
+building: libarchive
+
+$ tar xzf libarchive-2.7.0.tar.gz
+$ cd libarchive-2.7.0
+$ ./configure
+$ make
+$ make check
+$ make install
